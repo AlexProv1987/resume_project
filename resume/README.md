@@ -1,0 +1,1 @@
+SPA using React to display Resume/Projects and allow potential employer contact.
