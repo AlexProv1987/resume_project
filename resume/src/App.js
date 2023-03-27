@@ -1,20 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/Nav/NavBar';
+import Footer from './components/Footer/Footer';
+import ContactPage from "./components/Pages/ContactPage";
+import HomePage from "./components/Pages/HomePage";
+import ProjectPage from "./components/Pages/ProjectPage";
+import Resume from "./components/Pages/Resume";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
-  return (
-    <Container>
-   <Row>
-    <Col lg={true}>
-    <p>Haii</p>
-    </Col>
-    <Col lg={true}>
-      <p>Haaai</p>
-    </Col>
-   </Row>
-   </Container>
+  return(
+  <React.StrictMode>
+    <Router>
+    <NavBar />
+      <Routes>
+        <Route path='/' element={<HomePage/>}></Route>
+        <Route path='/contact' element={<ContactPage/>}></Route>
+        <Route path='/projects' element={<ProjectPage/>}></Route>
+        <Route path='/resume' element={<Resume/>}></Route>
+      </Routes>
+      <Footer />
+    </Router>
+  </React.StrictMode>
   );
 }
 

@@ -1,12 +1,12 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
-const HomePage = () => {
+const Resume = () => {
   return (
     <Container>
    <Row>
     <Col lg={true}>
-    <p>home</p>
+    <p>resume</p>
     </Col>
     <Col lg={true}>
       <p>Haaai</p>
@@ -16,4 +16,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage;
+export default Resume;
