@@ -6,6 +6,7 @@ import HomePage from "./components/Pages/HomePage";
 import ProjectPage from "./components/Pages/ProjectPage";
 import Resume from "./components/Pages/Resume";
 import React from 'react';
+import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return(

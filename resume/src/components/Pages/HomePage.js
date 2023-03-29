@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPython, faReact, faBootstrap, faAws, faCss3Alt, faGithub } from '@fortawesome/free-brands-svg-icons';
 const HomePage = () => {
     return (
-        <Container className="m-4">
+        <Container className="main-content m-4 text-white">
             <Row>
-                <Col md={{ span: 4, offset: 4 }}>
-                    <img className="rounded-circle" width="250" height="250" src='./mePhoto.png' />
+                <Col className="pb-2" md={{ span: 4, offset: 4 }}>
+                    <img className="my-pic rounded-circle" width="250" height="250" src='./mePhoto.png' />
                 </Col>
             </Row>
             <Row>
@@ -48,7 +48,7 @@ const HomePage = () => {
                     <p><b>Profiencies? </b></p>
                 </Col>
             </Row>
-            <Row xs="auto">
+            <Row xs="auto" className="pb-4">
                 <Col md={{ span: 4, offset: 6 }}>
                     <FontAwesomeIcon icon={faBootstrap} size="2xl" className="p-2" title="BootStrap"/>
                     <FontAwesomeIcon icon={faCss3Alt} size="2xl" className="p-2" title="CSS"/>

@@ -1,9 +1,11 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/esm/Container';
 
 const NavBar = () => {
     return (
+        <Container fluid='true'>
         <Navbar expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>
                 <img
@@ -24,6 +26,7 @@ const NavBar = () => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        </Container>
     );
 }
 export default NavBar;

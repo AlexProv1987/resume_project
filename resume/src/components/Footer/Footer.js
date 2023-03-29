@@ -15,9 +15,9 @@ const Footer = () => {
     let [mailToggle, setMailToggle] = useState(false)
 
     return (
-        <footer className=" fixed-bottom flex-shrink-0 py-4 bg-dark text-white-50">
-            <Container>
-                <Row xs="auto" className="justify-content-center">
+        <Container fluid ='true'>
+        <footer className="py-4 bg-dark text-white-50">
+                <Row xs='auto' className="justify-content-center">
                     <Col>
                         <Nav.Link onMouseOver={() => setLdToggle(true)} onMouseOut={() => setLdToggle(false)} href='https://www.linkedin.com/in/john-provenzano-953067169/'>
                             <FontAwesomeIcon className="test" icon={faLinkedin} size="lg" bounce={ldToggle} />
@@ -39,8 +39,8 @@ const Footer = () => {
                         </Nav.Link>
                     </Col>
                 </Row>
-            </Container>
         </footer>
+        </Container>
     );
 }
 export default Footer;
