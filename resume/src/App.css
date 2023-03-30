@@ -47,10 +47,10 @@ footer{
   border-style:double;
   border-color:black;
   background-color: white;
+}
 
-}.resume-row{
-  padding-bottom: 7px;
-  padding-top: 7px;
+p{
+  margin-bottom: 0%;
 }
 
 /*****************END RESUME  SPECIFIC    CSS******************/

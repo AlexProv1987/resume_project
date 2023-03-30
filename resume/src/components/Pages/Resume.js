@@ -1,168 +1,183 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 
 const Resume = () => {
   return (
-    <Container fluid='true' className='main-content m-4'>
-      <Container className='resume-content'>
-        <Row className='d-flex resume-row resume-header text-center'>
-          <h2 className='name-field'>John 'Alex' Provenzano</h2>
-          <h4>217 N Cherry St. Garder,KS 66030</h4>
-          <h4>Cell: (816) 663-1496</h4>
-          <h4>Email: alex.provenzano87@gmail.com </h4>
-        </Row>
-        <hr/>
-        <Row className='resume-row resume-exp text-center'>
-          Experience Support Software Engineer with a demonstrated history of working in the information
-          technology and service industry. Skilled in Python,Django Framework C#, React, CSS, JavaScript, SQL Dialects, PostGresSQL,
-          and CCL (CernerProprietary Language). Strong account management skilled with high level of customer service
-          satisfaction. Proficient in the Software Development Life Cycle.
-        </Row>
-        <hr/>
-        <Row className='resume-row text-center'>
-          <h4>Employment Experience</h4>
-        </Row>
-        {/*Company Section*/}
-        <hr/>
-        <Row className='resume-row'>
-          <h5>Cerner/Oracle Health</h5>
-        </Row>
-        <hr/>
-        <Row className='resume-row'>
-          <Col md={8}>
-            <h5>Support Services Owner</h5>
-          </Col>
-          <Col md={4} className='text-end'>
-            <h5>07/02/21 - Present</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Responsible for maintaining the Client Cerner Relationship.</li>
-              <li>Following code defects reported by support associates to have them delivered by
-                development teams to the client.</li>
-              <li>Worked closely with client-side resources and Cerner side resources to manage overall code
-                upgrades for the client.</li>
-              <li>Developed two internal tools for other Support Service Owners to use to track metrics and
-                follow up on problem issues. Both tools developed using C# (More detail on the tools
-                developed can be provided upon request)</li>
-            </ul>
-          </Col>
-        </Row>
-        <Row className='resume-row'>
-          <Col md={8}>
-            <h5>Production Software Engineer</h5>
-          </Col>
-          <Col md={4} className='text-end'>
-            <h5>01/02/20- 07/01/21</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Responsible for investigating code functionality and how it pertains to the user workflow.</li>
-              <li>4 th Highest producing Engineer in Patient Accounting Department.</li>
-              <li>Associate of the Quarter 3 of 2020.</li>
-              <li>Mentor new analyst in Patient Accounting Department.</li>
-              <li>Modified Code Base to correct defects.</li>
-              <li>High Client Satisfactions Ratings.</li>
-              <li>Met and Exceeds company productivity metrics.</li>
-              <li>Highly Valued Plus Rating during review cycle.</li>
-              <li>Working within a Linux based environment.</li>
-              <li>Work in a team-based environment.</li>
-            </ul>
-          </Col>
-        </Row>
-        <Row className='resume-row'>
-          <Col md={8}>
-            <h5>Technical Solutions Analyst</h5>
-          </Col>
-          <Col md={4} className='text-end'>
-            <h5>1/03/19-1/01/20</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Responsible for identifying high level software issues based on workflow knowledge.</li>
-              <li>Promotion to Software Engineer after eight months.</li>
-            </ul>
-          </Col>
-        </Row>
-        {/*End Company Section*/}
-        {/*Company Section*/}
-        <hr/>
-        <Row className='resume-row'>
-          <h5>Olathe Public School District</h5>
-        </Row>
-        <hr/>
-        <Row className='resume-row'>
-          <Col md={8}>
-            <h5>Substitute Teacher</h5>
-          </Col>
-          <Col md={4} className='text-end'>
-            <h5>12/2015-12/2019</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Maintain classrooms for students of all ages.</li>
-              <li>Trouble shoot problems as they arise in the classroom.</li>
-              <li>Utilize strong interpersonal communication skills.</li>
-            </ul>
-          </Col>
-        </Row>
-        {/*End Company Section*/}
-        {/*Company Section*/}
-        <hr/>
-        <Row className='resume-row'>
-          <h5>Johnson County Sheriffs Office</h5>
-        </Row>
-        <hr/>
-        <Row className='resume-row'>
-          <Col md={8}>
-            <h5>Deputy Sheriff</h5>
-          </Col>
-          <Col md={4} className='text-end'>
-            <h5>05/20/10-12/2015</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>Coordinate and manage inmates.</li>
+    <Container fluid='true' className='main-content mb-4'>
+      <Row className='resume-row justify-content-center mb-4'>
+        <Col md={{ span: 5, offset: 0 }}>
+          <Card className='text-center'>
+            <Card.Header as='h2'>
+              John 'Alex' Provenzano
+            </Card.Header>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className='justify-content-center mb-4'>
+        <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
+          <Card>
+            <Card.Header className='text-center' as='h4'>My Journey</Card.Header>
+            <Card.Body className='text-white'>
+              <Row>
+                <p className='pt-1'>Experience Support Software Engineer with a demonstrated history of working in the information
+                  technology and service industry. Skilled in Python,Django Framework C#, React, CSS, JavaScript, SQL Dialects, PostGresSQL,
+                  and CCL (CernerProprietary Language). Strong account management skilled with high level of customer service
+                  satisfaction. Proficient in the Software Development Life Cycle.</p>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
+          <Card>
+            <Card.Title className='text-center' as='h4'>Education</Card.Title>
+            <Card.Body className='text-white'>
+              <Row >
+                <Col sm={8} md={6} className='text-start'>
+                  <p><b>Friends University</b></p>
+                </Col>
+                <Col sm={8} md={6} className='text-end'>
+                  <p><b>Wichita, KS</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <p>Bachelor of Science</p>
+                <p>Major: Computer Information Systems</p>
+                <p>Minor: Software Development</p>
+                <p>Overall GPA 3.7, Major GPA 4.0 out of 4.0 scale</p>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+
+
+      <Row className='mb-4 justify-content-center'>
+        <Col sm={8} md={6}>
+          <Card>
+            <Card.Title as='h4' className='text-center'>Employment</Card.Title>
+            <Card.Body className='text-white'>
+
+              <Row>
+                <h5>Cerner/Oracle Health</h5>
+              </Row>
+              <hr />
+              <Row className='resume-row'>
+                <Col sm={8} md={6} className='text-start'>
+                  <p><b>Support Services Owner</b></p>
+                </Col>
+                <Col sm={8} md={6} className='text-end'>
+                  <p><b>07/02/21-Present</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>
+                    <li>Responsible for maintaining the Client Cerner Relationship.</li>
+                    <li>Following code defects reported by support associates to have them delivered by
+                      development teams to the client.</li>
+                    <li>Worked closely with client-side resources and Cerner side resources to manage overall code
+                      upgrades for the client.</li>
+                    <li>Developed two internal tools for other Support Service Owners to use to track metrics and
+                      follow up on problem issues. Both tools developed using C# (More detail on the tools
+                      developed can be provided upon request)</li>
+                  </ul>
+                </Col>
+              </Row>
+
+              <Row className='mb-4'>
+                <Col>
+                  <p><b>Software Engineer</b></p>
+                </Col>
+                <Col className='text-end'>
+                  <p><b>01/02/20-07/01/21</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>
+                    <li>Responsible for investigating code functionality and how it pertains to the user workflow.</li>
+                    <li>4 th Highest producing Engineer in Patient Accounting Department.</li>
+                    <li>Associate of the Quarter 3 of 2020.</li>
+                    <li>Mentor new analyst in Patient Accounting Department.</li>
+                    <li>Modified Code Base to correct defects.</li>
+                    <li>High Client Satisfactions Ratings.</li>
+                    <li>Met and Exceeds company productivity metrics.</li>
+                    <li>Highly Valued Plus Rating during review cycle.</li>
+                    <li>Working within a Linux based environment.</li>
+                    <li>Work in a team-based environment.</li>
+                  </ul>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p><b>Technical Solutions Analyst</b></p>
+                </Col>
+                <Col className='text-end'>
+                  <p><b>1/03/19-1/01/20</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>
+                    <li>Responsible for identifying high level software issues based on workflow knowledge.</li>
+                    <li>Promotion to Software Engineer after eight months.</li>
+                  </ul>
+                </Col>
+              </Row>
+
+              <hr />
+
+              <Row>
+                <h5>Olathe Public School District</h5>
+              </Row>
+              <hr />
+              <Row className='resume-row'>
+                <Col sm={8} md={6} className='text-start'>
+                  <p><b>Substitute Teacher</b></p>
+                </Col>
+                <Col sm={8} md={6} className='text-end'>
+                  <p><b>12/2015-12/2019</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>
+                    <li>Maintain classrooms for students of all ages.</li>
+                    <li>Trouble shoot problems as they arise in the classroom.</li>
+                    <li>Utilize strong interpersonal communication skills.</li>
+                  </ul>
+                </Col>
+              </Row>
+              <hr/>
+              <Row>
+                <h5>Johnson County Sheriffs Office</h5>
+              </Row>
+              <hr />
+              <Row className='resume-row'>
+                <Col sm={8} md={6} className='text-start'>
+                  <p><b>Deputy Sheriff</b></p>
+                </Col>
+                <Col sm={8} md={6} className='text-end'>
+                  <p><b>05/20/10-12/2015</b></p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <ul>
+                  <li>Coordinate and manage inmates.</li>
               <li>Member of Segregation Team working with maximum security inmates.</li>
               <li>Crisis Intervention Certified.</li>
-            </ul>
-          </Col>
-        </Row>
-        <hr/>
-        {/*End Company Section*/}
-        {/*Education Section */}
-        <Row className='resume-row'>
-          <h5>Education</h5>
-        </Row>
-        <hr/>
-        <Row className='resume-row'>
-            <p>Friends University - Wichita, KS</p>
-        </Row>
-        <Row className='resume-row'>
-          <p>Bachelor of Science</p>
-        </Row>
-        <Row className='resume-row'>
-          <p>Major: Computer Information Systems</p>
-        </Row>
-        <Row className='resume-row'>
-          <p>Minor: Software Development</p>
-        </Row>
-        <Row className='resume-row'>
-          <p>Overall GPA 3.7, Major GPA 4.0 out of 4.0 scale</p>
-        </Row>
-        {/*End Enducation Section */}
-      </Container>
+                  </ul>
+                </Col>
+              </Row>
+
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 }
