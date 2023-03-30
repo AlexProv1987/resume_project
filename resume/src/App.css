@@ -7,8 +7,6 @@ html,body{
   transform: rotate(360deg);
   transition: all 1.25s ease-in-out;
 }
-
-
 .f-icon-pop:hover{
   transform: scale(1.5);
 }
@@ -42,3 +40,17 @@ footer{
 .my-pic{
     box-shadow: 5px 10px #1d1d1f;
 }
+
+/*****************RESUME  SPECIFIC    CSS*********************/
+.resume-content{
+  border-width: 3px;
+  border-style:double;
+  border-color:black;
+  background-color: white;
+
+}.resume-row{
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+/*****************END RESUME  SPECIFIC    CSS******************/
