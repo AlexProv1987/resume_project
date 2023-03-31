@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 const Resume = () => {
   return (
     <Container fluid='true' className='main-content mb-4'>
-      <Row className='resume-row justify-content-center mb-4'>
+      <Row className='justify-content-center mt-2 mb-2'>
         <Col md={{ span: 5, offset: 0 }}>
           <Card className='text-center'>
             <Card.Header as='h2'>
@@ -16,7 +16,7 @@ const Resume = () => {
         </Col>
       </Row>
 
-      <Row className='justify-content-center mb-4'>
+      <Row className='justify-content-center pt-4'>
         <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
           <Card>
             <Card.Header className='text-center' as='h4'>My Journey</Card.Header>
@@ -32,7 +32,7 @@ const Resume = () => {
         </Col>
         <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
           <Card>
-            <Card.Title className='text-center' as='h4'>Education</Card.Title>
+            <Card.Header className='text-center' as='h4'>Education</Card.Header>
             <Card.Body className='text-white'>
               <Row >
                 <Col sm={8} md={6} className='text-start'>
@@ -52,24 +52,19 @@ const Resume = () => {
           </Card>
         </Col>
       </Row>
-
-
-      <Row className='mb-4 justify-content-center'>
-        <Col sm={8} md={6}>
-          <Card>
-            <Card.Title as='h4' className='text-center'>Employment</Card.Title>
-            <Card.Body className='text-white'>
+        
+        <Row className='p-2 mb-4'>
+          <Card className='p-0'>
+            <Card.Header as='h4' className='text-center'>Employment</Card.Header>
+            <Card.Body fluid='true' className='text-white'>
 
               <Row>
                 <h5>Cerner/Oracle Health</h5>
               </Row>
               <hr />
-              <Row className='resume-row'>
+              <Row>
                 <Col sm={8} md={6} className='text-start'>
-                  <p><b>Support Services Owner</b></p>
-                </Col>
-                <Col sm={8} md={6} className='text-end'>
-                  <p><b>07/02/21-Present</b></p>
+                  <p><b>Support Services Owner -- 07/02/21-Present</b></p>
                 </Col>
               </Row>
               <Row>
@@ -87,12 +82,9 @@ const Resume = () => {
                 </Col>
               </Row>
 
-              <Row className='mb-4'>
-                <Col>
-                  <p><b>Software Engineer</b></p>
-                </Col>
-                <Col className='text-end'>
-                  <p><b>01/02/20-07/01/21</b></p>
+              <Row>
+                <Col sm={8} md={6} className='text-start'>
+                  <p><b>Software Engineer -- 01/02/20-07/01/21</b></p>
                 </Col>
               </Row>
               <Row>
@@ -113,10 +105,7 @@ const Resume = () => {
               </Row>
               <Row>
                 <Col>
-                  <p><b>Technical Solutions Analyst</b></p>
-                </Col>
-                <Col className='text-end'>
-                  <p><b>1/03/19-1/01/20</b></p>
+                  <p><b>Technical Solutions Analyst -- 1/03/19-1/01/20</b></p>
                 </Col>
               </Row>
               <Row>
@@ -134,12 +123,9 @@ const Resume = () => {
                 <h5>Olathe Public School District</h5>
               </Row>
               <hr />
-              <Row className='resume-row'>
+              <Row>
                 <Col sm={8} md={6} className='text-start'>
-                  <p><b>Substitute Teacher</b></p>
-                </Col>
-                <Col sm={8} md={6} className='text-end'>
-                  <p><b>12/2015-12/2019</b></p>
+                  <p><b>Substitute Teacher -- 12/2015-12/2019</b></p>
                 </Col>
               </Row>
               <Row>
@@ -151,33 +137,29 @@ const Resume = () => {
                   </ul>
                 </Col>
               </Row>
-              <hr/>
+              <hr />
               <Row>
                 <h5>Johnson County Sheriffs Office</h5>
               </Row>
               <hr />
-              <Row className='resume-row'>
+              <Row>
                 <Col sm={8} md={6} className='text-start'>
-                  <p><b>Deputy Sheriff</b></p>
-                </Col>
-                <Col sm={8} md={6} className='text-end'>
-                  <p><b>05/20/10-12/2015</b></p>
+                  <p><b>Deputy Sheriff -- 05/20/10-12/2015</b></p>
                 </Col>
               </Row>
               <Row>
                 <Col>
                   <ul>
-                  <li>Coordinate and manage inmates.</li>
-              <li>Member of Segregation Team working with maximum security inmates.</li>
-              <li>Crisis Intervention Certified.</li>
+                    <li>Coordinate and manage inmates.</li>
+                    <li>Member of Segregation Team working with maximum security inmates.</li>
+                    <li>Crisis Intervention Certified.</li>
                   </ul>
                 </Col>
               </Row>
 
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
+        </Row>
     </Container>
   );
 }

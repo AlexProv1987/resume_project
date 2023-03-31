@@ -12,13 +12,15 @@ html,body{
 }
 
 .card{
-  box-shadow: 5px 10px #1d1d1f;
-  
+  box-shadow: 5px 10px #1d1d1f;  
 }
+
 .card-body{
   background-color:#1d1d1f;
 }
-
+.test-thing{
+  background-color:#3f474e;
+}
 .main-content{
   margin: 0 auto -75px;
   padding: 0 0 75px;
