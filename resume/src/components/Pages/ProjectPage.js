@@ -10,15 +10,15 @@ import 'react-tooltip/dist/react-tooltip.css';
 const ProjectPage = () => {
   return (
     <Container fluid='true' className='main-content m-5'>
-      <Row className='align-items-center justify-content-center text-center m-5'>
+      <Row className='justify-content-center text-center m-5'>
         <Col md={{ span: 3, offset: 0 }}>
       <Card>
         <Card.Header as='h4'>Code Lab</Card.Header>
       </Card>
       </Col>
       </Row>
-      <Row className='text-center justify-content-center align-items-center'>
-        <Col sm={6} md={6} className='pb-4'>
+      <Row className='text-center justify-content-center'>
+        <Col sm={6} md={6} className='pb-4' >
           <Card className='card-content'>
             <Card.Header as='h4'>Billing Buddy</Card.Header>
             <Card.Body className='text-white'>
