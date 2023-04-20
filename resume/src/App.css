@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+html,body{
+  background-color:#3f474e;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.f-icon-spin:hover{
+  transform: rotate(360deg);
+  transition: all 1.25s ease-in-out;
+}
+.f-icon-pop:hover{
+  transform: scale(1.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  box-shadow: 5px 10px #1d1d1f;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-body{
+  background-color:#1d1d1f;
+}
+.test-thing{
+  background-color:#3f474e;
+}
+.main-content{
+  margin: 0 auto -75px;
+  padding: 0 0 75px;
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  position: fixed;
+  bottom: 0;
+  height:75px;
+  width:100%;
 }
+
+.my-pic{
+    box-shadow: 5px 10px #1d1d1f;
+}
+
+/*****************RESUME  SPECIFIC    CSS*********************/
+.resume-content{
+  border-width: 3px;
+  border-style:double;
+  border-color:black;
+  background-color: white;
+}
+
+p{
+  margin-bottom: 0%;
+}
+
+/*****************END RESUME  SPECIFIC    CSS******************/
