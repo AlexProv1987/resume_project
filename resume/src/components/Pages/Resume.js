@@ -16,13 +16,13 @@ const Resume = () => {
         </Col>
       </Row>
 
-      <Row className='justify-content-center pt-4'>
-        <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
+      <Row className='justify-content-center pt-4 w-100'>
+        <Col xl={6} sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
           <Card>
             <Card.Header className='text-center' as='h4'>My Journey</Card.Header>
             <Card.Body className='text-white'>
               <Row>
-                <p className='pt-1'>Experience Support Software Engineer with a demonstrated history of working in the information
+                <p className='pt-1'>Experienced Support Software Engineer with a demonstrated history of working in the information
                   technology and service industry. Skilled in Python,Django Framework C#, React, CSS, JavaScript, SQL Dialects, PostGresSQL,
                   and CCL (CernerProprietary Language). Strong account management skilled with high level of customer service
                   satisfaction. Proficient in the Software Development Life Cycle.</p>
@@ -30,7 +30,7 @@ const Resume = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
+        <Col xl={6} sm={8} md={6} className='mb-4 d-flex align-items-stretch'>
           <Card>
             <Card.Header className='text-center' as='h4'>Education</Card.Header>
             <Card.Body className='text-white'>
